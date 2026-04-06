@@ -3,6 +3,7 @@ import random
 import pandas as pd
 
 fake = Faker()
+#values for the columns
 regions = ['North America', 'Europe', 'Asia', 'South America', 'Africa']
 payment_methods = ['Credit Card', 'PayPal', 'Bank Transfer', 'Cash']
 statuses = ['Completed', 'Pending', 'Cancelled']
@@ -31,4 +32,5 @@ for _ in range(1000):  # 1000 fake transactions
 
 df = pd.DataFrame(transactions)
 
-df.to_csv("data/fake_transactions.csv", index=False)
+if __name__ == "__main__":
+    df.to_csv("data/fake_transactions.csv", index=False)
