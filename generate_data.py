@@ -10,7 +10,7 @@ categories = ['Electronics', 'Clothing', 'Books', 'Home', 'Sports']
 
 transactions = []
 
-for _ in range(50):  # 50 fake transactions
+for _ in range(1000):  # 1000 fake transactions
     product_price = round(random.uniform(10, 500), 2)
     quantity = random.randint(1, 10)
     transactions.append({
@@ -30,4 +30,5 @@ for _ in range(50):  # 50 fake transactions
     })
 
 df = pd.DataFrame(transactions)
-print(df.head())
+
+df.to_csv("data/fake_transactions.csv", index=False)
