@@ -1,8 +1,8 @@
-from generate_data import generate_transactions
+from generate_dashboards import generate_dashboards
 
 def main():
-    generate_transactions(1000)
+    df = generate_dashboards()
+    print(df.head())
 
 if __name__ == "__main__":
     main()
-
