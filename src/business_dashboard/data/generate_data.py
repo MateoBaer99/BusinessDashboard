@@ -2,7 +2,6 @@
 
 from pathlib import Path
 import random
-
 import pandas as pd
 from faker import Faker
 
@@ -51,7 +50,7 @@ def generate_transactions(n: int) -> pd.DataFrame:
 
 
 def save_transactions_csv(
-    df: pd.DataFrame, output_path: str | Path = "data/fake_transactions.csv"
+    df: pd.DataFrame, output_path: str | Path = "fake_transactions.csv"
 ) -> None:
     """Save generated transactions to CSV."""
     output = Path(output_path)
