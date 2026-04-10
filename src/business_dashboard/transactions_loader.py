@@ -1,5 +1,5 @@
 """
-generate_dashboards.py
+transactions_loader.py
 
 Helpers for loading the generated transaction CSV into pandas.
 """
