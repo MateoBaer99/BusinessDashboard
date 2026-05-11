@@ -10,6 +10,8 @@ CSS_DIR = STATIC_DIR / "css"
 JS_DIR = STATIC_DIR / "js"
 
 
+
+
 def render_dashboard_html(
     placeholders: dict[str, str],
     template_name: str = "template.html",
